@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-
 void main() {
   runApp(const TaskiApp());
 }
+
 
 class TaskiApp extends StatelessWidget {
   const TaskiApp({super.key});
