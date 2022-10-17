@@ -1,3 +1,4 @@
+// ignore: depend_on_referenced_packages
 import 'package:page_transition/page_transition.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +23,7 @@ class _TaskiAppState extends State<TaskiApp> {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: SplashScreen(),
+      home: const SplashScreen(),
     );
   }
 }
@@ -39,17 +40,17 @@ class SplashScreen extends StatelessWidget {
             height: 90,
             color: Colors.white,
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
         ]),
-        nextScreen: Home(),
+        nextScreen: const Home(),
         splashIconSize: 150,
         duration: 3000,
         splashTransition: SplashTransition.fadeTransition,
         pageTransitionType: PageTransitionType.rightToLeft,
-        animationDuration: Duration(seconds: 1),
-        backgroundColor: Color.fromARGB(255, 62, 55, 255),
+        animationDuration: const Duration(seconds: 1),
+        backgroundColor: const Color.fromARGB(255, 62, 55, 255),
         );
         
   }

@@ -5,10 +5,29 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-        color:Colors.white,
-      )
+    return Scaffold(
+      appBar: AppBar(
+        toolbarHeight: 60,
+        backgroundColor: const Color.fromARGB(255, 62, 55, 255),
+        title: const Padding(
+          padding: EdgeInsets.only(left: 32),
+          child: Text(
+            'Taski',
+            style: TextStyle(
+              fontFamily: 'Kaushan', 
+              fontSize: 30
+            ),
+          ),
+        ),
+      ),
+      body: ListView(
+        children: [
+          Container(
+              decoration: const BoxDecoration(
+            color: Colors.white,
+          ))
+        ],
+      ),
     );
   }
 }
