@@ -36,7 +36,7 @@ class SplashScreen extends StatelessWidget {
     return AnimatedSplashScreen(
         splash: Column(children: [
           Image.asset(
-            'assets/dart.png',
+            'assets/logo.png',
             height: 90,
             color: Colors.white,
           ),

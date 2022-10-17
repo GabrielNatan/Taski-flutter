@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task/components/task.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -22,10 +23,13 @@ class Home extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          Container(
-              decoration: const BoxDecoration(
-            color: Colors.white,
-          ))
+          Column(
+            children: [
+              Task(),
+              Task(),
+              Task(),
+            ],
+          ),
         ],
       ),
     );
